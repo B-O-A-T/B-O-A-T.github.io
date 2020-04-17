@@ -1,1 +1,27 @@
-theme: jekyll-theme-merlot
+# Site settings
+name: 坚持
+email: work_hu123@163.com
+author: Tiger He
+url: https://b-o-a-t.github.io
+# resume_site: http://www.hifreud.com/Resume.io/
+github: https://github.com/B-O-A-T/
+# baseurl: ' '
+description: Actually, less is more!
+meta_description: 个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
+motto: What I cannot create, I do not understand.
+banner: 学而不思则罔，思而不学则殆。
+
+#permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
+paginate: 10
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
+github_username: B-O-A-T
+
+# Build settings
+markdown: kramdown
+
+# baidu_analysis: 43fe509159d6118d0ebe1c6fd2cf99a1
+
+plugins: [jekyll-paginate]
