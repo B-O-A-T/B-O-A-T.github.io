@@ -12,7 +12,7 @@
 - 该设备的只能被mediaRead()、 mediaWrite()以及mediaSync()三个操作访问
 
 文件格式：  
-![file](https://note.youdao.com/favicon.ico)  
+![file](https://github.com/B-O-A-T/B-O-A-T.github.io/blob/master/image/2020-04-30/sqlite_test_onefile1.png)  
 基本原则是database file从前往后存，journal file从后往前存。实例中规定size为10MB，当写入量超过其90%的时候，返回SQLITE_FULL的错误。   
 文件的头一个512字节的块用于存储数据库文件的大小，随着sync()操作进行更新。只有当journal file不存在时，此值正确，否则文件大小以journal file中记录的值为准。从第二个块起用于存储数据库文件内容。  
 “日志文件”的大小不会永久存储在文件中。当系统运行时，日志文件的大小存储在易失性内存中。从崩溃中恢复时，此vfs报告日志文件的大小非常大。常规的日记标题和校验和机制用于防止SQLite处理任何超出日记逻辑端的数据。  
